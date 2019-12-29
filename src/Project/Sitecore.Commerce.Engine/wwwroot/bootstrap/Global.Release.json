@@ -1,0 +1,22 @@
+﻿{
+  "@jdt.merge": [
+    {
+      "@jdt.path": "$.Policies.$values[?(@.$type == 'Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy, Sitecore.Commerce.Plugin.SQL')]",
+      "@jdt.value": {
+        "Database": "#{commerce-db-prefix}-global-db",
+        "Password": "#{global-db-password}",
+        "Server": "#{commerce-sql-server}",
+        "TrustedConnection": false,
+        "UserName": "#{global-db-username}"
+      }
+    },
+    {
+      "@jdt.path": "$.Policies.$values[?(@.$type == 'Sitecore.Commerce.Plugin.Management.SitecoreConnectionPolicy, Sitecore.Commerce.Plugin.Management')]",
+      "@jdt.value": {
+        "Host": "#{cm-url}",
+        "UserName": "#{cms-username}",
+        "Password": "#{cms-password}" 
+      } 
+    }
+  ]
+}

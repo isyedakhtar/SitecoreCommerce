@@ -1,0 +1,234 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <Description>The Sitecore Commerce Engine SDK.</Description>
+    <Authors>AKQA</Authors>
+    <TargetFramework>net471</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <PackageTags>$(PackageTags);Commerce;Plugin;SDK;Engine</PackageTags>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\bootstrap\Global.json" />
+    <Content Remove="wwwroot\bootstrap\Global.Release.json" />
+    <Content Remove="wwwroot\config.json" />
+    <Content Remove="wwwroot\config.Release.json" />
+    <Content Remove="wwwroot\config.Development.json" />
+    <Content Remove="wwwroot\data\Environments\Core.ControllerMethodRoles.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.AccessByRoles.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.AuthoringMemoryCache.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.Catalog.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.CatalogIndexing.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.Content.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.Content.PolicySet-1.0.0.Release.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.LocalizeEntities.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.MinionsMemoryCache.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.Plugin.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.Relationships.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.Search.Azure.PolicySet-1.0.0.json.disabled" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.Search.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.Search.PolicySet-1.0.0.Release.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.Search.Solr.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.ShopsMemoryCache.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\Plugin.SQL.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\Plugin.SQL.PolicySet-1.0.0.Release.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.SQL.Sharding.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.Validation.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.Versioning.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.ViewTemplateComposer.PolicySet-1.0.0.json" />
+    <Content Remove="wwwroot\data\Environments\PlugIn.Workflow.PolicySet-1.0.0.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\bootstrap\Global.json" CopyToPublishDirectory="Never" />
+    <Content Include="wwwroot\bootstrap\Global.Release.json" CopyToPublishDirectory="Never" />
+    <Content Include="wwwroot\config.json" CopyToPublishDirectory="Never" />
+    <Content Include="wwwroot\config.Release.json" CopyToPublishDirectory="Never" />
+    <Content Include="wwwroot\config.Development.json" CopyToPublishDirectory="Never" />
+    <Content Include="wwwroot\data\Environments\Core.ControllerMethodRoles.PolicySet-1.0.0.json" CopyToPublishDirectory="Never" />
+    <Content Include="wwwroot\data\Environments\PlugIn.AccessByRoles.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.AuthoringMemoryCache.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.Catalog.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.CatalogIndexing.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.Content.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.Content.PolicySet-1.0.0.Release.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.LocalizeEntities.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.MinionsMemoryCache.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.Plugin.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.Relationships.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.Search.Azure.PolicySet-1.0.0.json.disabled" />
+    <Content Include="wwwroot\data\Environments\PlugIn.Search.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.Search.PolicySet-1.0.0.Release.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.Search.Solr.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.ShopsMemoryCache.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\Plugin.SQL.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\Plugin.SQL.PolicySet-1.0.0.Release.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.SQL.Sharding.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.Validation.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.Versioning.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.ViewTemplateComposer.PolicySet-1.0.0.json" />
+    <Content Include="wwwroot\data\Environments\PlugIn.Workflow.PolicySet-1.0.0.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Views;Areas\**\Views">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+    <None Update="wwwroot\logs\**\*">
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="wwwroot\bootstrap\Global.json" CopyToPublishDirectory="Never">
+      <TransformOnBuild>true</TransformOnBuild>
+    </None>
+    <None Update="wwwroot\bootstrap\Global.Release.json" CopyToPublishDirectory="Never">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>Global.json</DependentUpon>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="wwwroot\config.json" CopyToPublishDirectory="Never">
+      <TransformOnBuild>true</TransformOnBuild>
+    </None>
+    <None Update="wwwroot\config.Release.json" CopyToPublishDirectory="Never">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>config.json</DependentUpon>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="wwwroot\data\Environments\PlugIn.Content.PolicySet-1.0.0.Release.json">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>PlugIn.Content.PolicySet-1.0.0.json</DependentUpon>
+    </None>
+    <None Update="wwwroot\data\Environments\Plugin.SQL.PolicySet-1.0.0.Release.json">
+      <TransformOnBuild>true</TransformOnBuild>
+      <DependentUpon>Plugin.SQL.PolicySet-1.0.0.json</DependentUpon>
+    </None>
+    <None Update="wwwroot\data\Environments\Plugin.SQL.PolicySet-1.0.0.Release.json">
+      <IsTransformFile>true</IsTransformFile>
+      <DependentUpon>Plugin.SQL.PolicySet-1.0.0.json</DependentUpon>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.7.0" />
+
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.1.*" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.*" />
+    <PackageReference Include="Microsoft.VisualStudio.SlowCheetah" Version="3.2.26">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+
+    <PackageReference Include="Serilog.AspNetCore" Version="2.1.*" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.0.*" />
+    <PackageReference Include="Serilog.Sinks.Literate" Version="3.0.*" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.0.*" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="1.3.*" />
+
+    <PackageReference Include="Sitecore.Commerce.Plugin.CacheWatcher" Version="3.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Composer" Version="3.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="3.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.SQL" Version="3.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Tax" Version="3.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Provider.FileSystem" Version="3.0.*" />
+
+    <PackageReference Include="Sitecore.Commerce.Plugin.Search.Azure" Version="3.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Search.Solr" Version="3.0.*" />
+
+    <PackageReference Include="Sitecore.Commerce.Plugin.Orders.DelayedAvailability" Version="3.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.FaultInjection" Version="3.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Content" Version="3.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Workflow" Version="3.0.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Feature\Carts\Engine\Habitat.Feature.Carts.csproj" />
+    <ProjectReference Include="..\..\Feature\Promotions\Engine\Habitat.Feature.Promotions.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="wwwroot\**\*;Views;Areas\**\Views">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+    <None Update="wwwroot\logs\**\*">
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+ 
+  <ItemGroup>
+    <None Update="wwwroot\bootstrap\Global.Release.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\config.Release.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\config.Development.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\Core.ControllerMethodRoles.PolicySet-1.0.0.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\PlugIn.AccessByRoles.PolicySet-1.0.0.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\PlugIn.Content.PolicySet-1.0.0.Release.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\PlugIn.Search.PolicySet-1.0.0.Release.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\Plugin.SQL.PolicySet-1.0.0.Release.json" CopyToPublishDirectory="Never" />
+    
+    <None Update="wwwroot\data\Environments\PlugIn.AuthoringMemoryCache.PolicySet-1.0.0.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\PlugIn.Catalog.PolicySet-1.0.0.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\PlugIn.CatalogIndexing.PolicySet-1.0.0.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\PlugIn.Content.PolicySet-1.0.0.json" CopyToPublishDirectory="Never">
+      <TransformOnBuild>true</TransformOnBuild>
+    </None>
+    <None Update="wwwroot\data\Environments\PlugIn.LocalizeEntities.PolicySet-1.0.0.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\PlugIn.MinionsMemoryCache.PolicySet-1.0.0.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\PlugIn.Plugin.PolicySet-1.0.0.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\PlugIn.Relationships.PolicySet-1.0.0.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\PlugIn.Search.Azure.PolicySet-1.0.0.json.disabled" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\PlugIn.Search.PolicySet-1.0.0.json" CopyToPublishDirectory="Never">
+      <TransformOnBuild>true</TransformOnBuild>
+    </None>
+    <None Update="wwwroot\data\Environments\PlugIn.Search.Solr.PolicySet-1.0.0.json" CopyToPublishDirectory="Never">
+      <TransformOnBuild>true</TransformOnBuild>
+    </None>
+    <None Update="wwwroot\data\Environments\PlugIn.ShopsMemoryCache.PolicySet-1.0.0.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\Plugin.SQL.PolicySet-1.0.0.json" CopyToPublishDirectory="Never">
+      <TransformOnBuild>true</TransformOnBuild>
+    </None>
+    <None Update="wwwroot\data\Environments\PlugIn.SQL.Sharding.PolicySet-1.0.0.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\PlugIn.Validation.PolicySet-1.0.0.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\PlugIn.Versioning.PolicySet-1.0.0.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\PlugIn.ViewTemplateComposer.PolicySet-1.0.0.json" CopyToPublishDirectory="Never" />
+    <None Update="wwwroot\data\Environments\PlugIn.Workflow.PolicySet-1.0.0.json" CopyToPublishDirectory="Never" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="wwwroot\bootstrap\Global.Release.json">
+      <IsTransformFile>true</IsTransformFile>
+    </None>
+    <None Update="wwwroot\config.Release.json">
+      <IsTransformFile>true</IsTransformFile>
+    </None>
+    <None Update="wwwroot\data\Environments\PlugIn.Content.PolicySet-1.0.0.Release.json">
+      <IsTransformFile>true</IsTransformFile>
+    </None>
+    <None Update="wwwroot\data\Environments\PlugIn.Search.PolicySet-1.0.0.Release.json">
+      <IsTransformFile>true</IsTransformFile>     
+    </None>
+    <None Update="wwwroot\data\Environments\Plugin.SQL.PolicySet-1.0.0.Release.json">
+      <IsTransformFile>true</IsTransformFile>
+    </None>
+  </ItemGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>NU1603,NU1605</NoWarn>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>NU1603,NU1605</NoWarn>
+    <WarningsAsErrors />
+  </PropertyGroup>
+</Project>

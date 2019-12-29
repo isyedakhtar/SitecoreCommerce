@@ -1,0 +1,40 @@
+﻿{
+  "@jdt.merge": [
+    {
+      "@jdt.path": "$.Policies.$values[?(@.SearchScopeName == 'OrdersScope')]",
+      "@jdt.value": {
+        "SearchScopeName": "#{solr-core-prefix}OrdersScope"
+      }
+    },
+    {
+      "@jdt.path": "$.Policies.$values[?(@.SearchScopeName == 'CustomersScope')]",
+      "@jdt.value": {
+        "SearchScopeName": "#{solr-core-prefix}CustomersScope"
+      }
+    },
+    {
+      "@jdt.path": "$.Policies.$values[?(@.SearchScopeName == 'CatalogItemsScope')]",
+      "@jdt.value": {
+        "SearchScopeName": "#{solr-core-prefix}CatalogItemsScope"
+      }
+    },
+    {
+      "@jdt.path": "$.Policies.$values[?(@.Name == 'OrdersScope')]",
+      "@jdt.value": {
+        "Name": "#{solr-core-prefix}OrdersScope"
+      }
+    },
+    {
+      "@jdt.path": "$.Policies.$values[?(@.Name == 'CustomersScope')]",
+      "@jdt.value": {
+        "Name": "#{solr-core-prefix}CustomersScope"
+      }
+    },
+    {
+      "@jdt.path": "$.Policies.$values[?(@.Name == 'CatalogItemsScope')]",
+      "@jdt.value": {
+        "Name": "#{solr-core-prefix}CatalogItemsScope"
+      }
+    }
+  ]
+}

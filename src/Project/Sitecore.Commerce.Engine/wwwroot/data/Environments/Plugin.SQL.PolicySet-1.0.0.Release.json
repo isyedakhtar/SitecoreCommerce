@@ -1,0 +1,14 @@
+﻿{
+  "@jdt.merge": [
+    {
+      "@jdt.path": "$.Policies.$values[?(@.$type == 'Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy, Sitecore.Commerce.Plugin.SQL')]",
+      "@jdt.value": {
+        "TrustedConnection": false,
+        "UserName": "#{shared-db-username}",
+        "Password": "#{shared-db-password}",
+        "Server": "#{commerce-sql-server}",
+        "Database": "#{commerce-db-prefix}-shared-db"
+      } 
+    }
+  ] 
+}
