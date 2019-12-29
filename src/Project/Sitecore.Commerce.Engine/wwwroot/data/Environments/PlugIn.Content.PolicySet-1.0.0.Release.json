@@ -1,0 +1,12 @@
+﻿{
+  "@jdt.merge": [
+    {
+      "@jdt.path": "$.Policies.$values[?(@.$type == 'Sitecore.Commerce.Plugin.Management.SitecoreConnectionPolicy, Sitecore.Commerce.Plugin.Management')]",
+      "@jdt.value": {
+        "Host": "#{cm-url}",
+        "UserName": "#{cms-username}",
+        "Password": "#{cms-password}" 
+      } 
+    }
+  ] 
+}

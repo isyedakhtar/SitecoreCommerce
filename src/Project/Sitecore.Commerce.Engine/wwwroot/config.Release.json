@@ -1,0 +1,44 @@
+﻿{
+  "AppSettings": {
+    "@jdt.replace": [
+      {
+        "@jdt.path": "SitecoreIdentityServerUrl",
+        "@jdt.value": "https://#{identity-server-url}"
+      },
+      {
+        "@jdt.path": "AllowedOrigins",
+        "@jdt.value": [
+          "https://#{bizfx-url}",
+          "http://#{bizfx-url}",
+          "https://#{cm-url}",
+          "http://#{cm-url}",
+          "https://#{cd-url}",
+          "http://#{cd-url}"
+        ]
+      }
+    ]
+  },
+  "@jdt.merge": [
+    {
+      "@jdt.path": "ApplicationInsights",
+      "@jdt.value": {
+        "InstrumentationKey": "#{app-insights-key}",
+        "DeveloperMode": false,
+        "TelemetryEnabled": true
+      }
+    },
+    {
+      "@jdt.path": "Logging",
+      "@jdt.value": {
+        "IncludeScopes": false,
+        "LogLevel": {
+          "Default": "Warning",
+          "System": "Warning",
+          "Microsoft": "Warning"
+        },
+        "ApplicationInsightsLoggingEnabled": true,
+        "SerilogLoggingEnabled": false
+      }
+    }
+  ]
+}
